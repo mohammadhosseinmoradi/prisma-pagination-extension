@@ -1,0 +1,39 @@
+{
+  "name": "prisma-pagination-extension",
+  "version": "1.0.0",
+  "description": "Prisma Client extension for pagination.",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && microbundle --format esm,cjs",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build",
+    "watch": "microbundle watch --format esm,cjs"
+  },
+  "keywords": [
+    "node",
+    "prisma",
+    "prisma-client",
+    "prisma-extension",
+    "pagination",
+    "paginate"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammadhosseinmoradi/prisma-pagination-extension.git"
+  },
+  "author": "Mohammad Hossein Moradi <mohammadhosseinmoradi.545@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "microbundle": "^0.14.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/mohammadhosseinmoradi/prisma-pagination-extension/issues"
+  },
+  "homepage": "https://github.com/mohammadhosseinmoradi/prisma-pagination-extension#readme"
+}
